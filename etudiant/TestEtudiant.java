@@ -1,4 +1,4 @@
-import etudiant_package.*;
+import etudiant_pack.*;
 
 public class TestEtudiant{
     public static void main(String []args)
@@ -6,5 +6,6 @@ public class TestEtudiant{
         Etudiant e = new Etudiant("Pierre");
 
         e.travailler();
+        e.seReposer();
     }
 }

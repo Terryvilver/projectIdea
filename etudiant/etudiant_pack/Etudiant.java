@@ -2,10 +2,10 @@ package etudiant_pack;
 
 public class Etudiant
 {
-    private String nom;
+    protected String nom;
 
     /*** CONSTRUCTEUR ***/
-    Etudiant(String nom)
+    public Etudiant(String nom)
     {
         this.nom = nom;
     }

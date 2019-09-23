@@ -1,6 +1,4 @@
 //Classe mère de Employe et de Etudiant.
-package ma.exelib.projet.classes;
-
 public class Personne{
     protected int id;
     protected String nom;

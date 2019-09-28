@@ -48,6 +48,8 @@ public class Billet{
         int nombre, nombreA;
         int b500, b200, b100, b50, b20, b10, b5;
 
+        System.out.print("Saisir un montant : ");
+
         nombre = scan.nextInt();
         nombreA = nombre;
 
@@ -72,6 +74,7 @@ public class Billet{
         b5 = billet_5(nombre);
         nombre = nombre - (b5 * 5);
 
-       System.out.println(nombreA + " = " + b500 + "*500€ + " + b200 + "*200€ + " + b100 + "*100€ + " + b50 + "*50€ + " + b20 + "*20€ + " + b10 + "*10€ + " + b5 + "*5€ + "+ nombre +"€." );
+        System.out.print("\n");
+        System.out.print(nombreA + "€ = " + b500 + "*500€ + " + b200 + "*200€ + " + b100 + "*100€ + " + b50 + "*50€ + " + b20 + "*20€ + " + b10 + "*10€ + " + b5 + "*5€ + "+ nombre +"€." );
     }
 }

@@ -1,3 +1,7 @@
+/*Écrire un programme qui, pour une somme donnée en euro, 
+affiche le nombre de billets qui la compose.
+Exemple : 3287€ = 6*500€ + 1*200€ + 0*100€ + 1*50€ + 3*10€ + 1*5€ + 2€
+*/
 import java.util.Scanner;
 
 public class Billet{

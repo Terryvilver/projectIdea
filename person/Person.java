@@ -1,50 +1,3 @@
-package classes;
-
-public class Person{
-    protected String name;
-    protected String email;
-    protected int phone;
-
-    /* CONSTRUCTEUR */
-    Person(){
-        name = "";
-        email = "";
-        phone = 0;
-    }
-
-    Person(String name, String email, int phone){
-        name = "";
-        email = "";
-        phone = 0;
-    }
-
-    /* Getters */
-    public String getName(){
-        return this.name;
-    }
-
-    public String getEmail(){
-        return this.email;
-    }
-
-    public int getPhone(){
-        return this.phone;
-    }
-
-    /* Setters */
-    public void setName(String name){
-        this.name = name;
-    }
-
-    public void setEmail(String email){
-        this.email = email;
-    }
-
-    public void setPhone(int phone){
-        this.phone = phone;
-    }
-}
-
 class Student extends Person{
     private String college;
     private String classe;
@@ -137,4 +90,63 @@ class Employee extends Person{
         this.salary = salary;
     }
 
+    public String toString(){
+        return super.toString() + " " + this.title + " " + this.employer + " " + this.employeeGrade + " " + this.salary;
+    }
+
 }
+
+public class Person{
+    protected String name;
+    protected String email;
+    protected int phone;
+
+    /* CONSTRUCTEUR */
+    protected Person(){
+        name = "";
+        email = "";
+        phone = 0;
+    }
+
+    protected Person(String name, String email, int phone){
+        this.name = name;
+        this.email = email;
+        this.phone = phone;
+    }
+
+    /* Getters */
+    public String getName(){
+        return this.name;
+    }
+
+    public String getEmail(){
+        return this.email;
+    }
+
+    public int getPhone(){
+        return this.phone;
+    }
+
+    /* Setters */
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setEmail(String email){
+        this.email = email;
+    }
+
+    public void setPhone(int phone){
+        this.phone = phone;
+    }
+
+    public String toString(){
+        return this.name + " " + this.email + " " + this.phone;
+    }
+
+    public static void main(String []args){
+        Employee a1 = new Employee("Terry", "abc@gmail.com", 123456789, "Professeur", "Mr Paul", "Grade:A", 15000);
+        System.out.println(a1);
+    }
+}
+

@@ -91,7 +91,7 @@ class Employee extends Person{
     }
 
     public String toString(){
-        return super.toString() + " " + this.title + " " + this.employer + " " + this.employeeGrade + " " + this.salary;
+        return super.name + " " + super.email + " " + super.phone + " " + this.title + " " + this.employer + " " + this.employeeGrade + " " + this.salary;
     }
 
 }
@@ -140,13 +140,8 @@ public class Person{
         this.phone = phone;
     }
 
-    public String toString(){
-        return this.name + " " + this.email + " " + this.phone;
-    }
-
     public static void main(String []args){
         Employee a1 = new Employee("Terry", "abc@gmail.com", 123456789, "Professeur", "Mr Paul", "Grade:A", 15000);
         System.out.println(a1);
     }
 }
-
